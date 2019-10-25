@@ -10,6 +10,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.6.2",
+    "mock-async-storage": "^2.2.0",
     "react": "16.9.0",
     "react-native": "0.61.2"
   },
@@ -49,6 +51,9 @@
     ],
     "collectCoverageFrom": [
       "!src/service/api.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@react-native-community|react-native)/)"
     ],
     "coverageDirectory": "__tests__/coverage",
     "moduleNameMapper": {
